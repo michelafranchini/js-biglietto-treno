@@ -6,11 +6,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/style2.css">
         <title>Boolean Train</title>
     </head>
     <body>
-        
-        <!-- <script src="Javascript/script.js"></script> -->
+        <header>
+            <div class="container_logo">
+                <i class="fas fa-train"></i>
+                <h2>Boolean Train tickets</h2>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">I nostri treni</a></li>
+                    <li><a href="#">Le destinazioni</a></li>
+                    <li><a href="#">offerte</a></li>
+                    <li><a href="#">fidelity card</a></li>
+                    <li><a href="#">info </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="title">
+                    <h3>Vuoi partire subito ma non sai il costo del biglietto?</h3>
+                    <h1>calcola subito il prezzo del biglietto</h1>
+                    <h3>usa il nostro calcolatore automatico</h3>
+                </div>
+                <div class="calculator">
+                    <h2>Calcola il tuo biglietto</h2>
+                    <div id="biglietto-input">
+                        <div>
+                            <input id="eta-passeggero" type="text" name="eta_passeggero" placeholder="Et&agrave; del passeggero">
+                        </div>
+                        <div>
+                            <input id="chilometri" type="text" name="chilometri"placeholder="Chilometri da percorrere">
+                        </div>
+                        <button onclick="calcoloBiglietto()">Verifica il prezzo!</button>
+                        <h3>Il prezzo finale &egrave; </h3>
+                        <p id="prezzo_finale"></p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </main>
+
+        <footer>
+
+        </footer>
+        <script src="Javascript/script2.js"></script>
     </body>
 </html>
